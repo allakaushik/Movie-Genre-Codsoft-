@@ -1,89 +1,97 @@
-# 🏨 G-Hostel Website
+# 🎬 Movie Genre Classifier - CodSoft Internship Project
 
-A complete web-based hostel management system designed to streamline hostel activities like room allotment, student registration, warden controls, and fee tracking. This project is ideal for hostel administrators, wardens, and students to interact in a digital, efficient environment.
+This project is developed as part of the **CodSoft Internship**. The goal of this project is to build a machine learning model that can classify movie genres based on various features from the dataset.
 
-## 🚀 Features
+## 📌 Table of Contents
 
-- 🧑‍🎓 **Student Registration & Login**
-- 🏢 **Room Booking & Allotment**
-- 💳 **Fee Management System**
-- 🔐 **Admin/Warden Panel**
-- 📊 **Dashboard for Overview**
-- ✉️ **Contact Page**
-- 🔍 **Search & Filter Functionalities**
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Model Accuracy](#model-accuracy)
+- [Contributors](#contributors)
+- [License](#license)
 
-## 🛠️ Technologies Used
+---
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Backend**: PHP
-- **Database**: MySQL
-- **Tools**: XAMPP / WAMP for local development
+## 🚀 Project Overview
 
-## 📁 Project Structure
+The **Movie Genre Classifier** is a machine learning-based application that predicts the genre of a movie given a set of features such as movie title, description, and other metadata. The dataset used includes several movie features, and the model is trained using classification algorithms.
 
-```
-G-Hostel-Website/
-├── admin/
-├── student/
-├── css/
-├── js/
-├── includes/
-├── images/
-├── database/
-│   └── ghostel.sql
-├── index.php
-└── README.md
-```
+### Features:
+- Preprocessing of movie data
+- Feature extraction and vectorization
+- Classification using machine learning models
+- Evaluation and accuracy reporting
+- GUI using `Tkinter` (if applicable)
 
-## 🖥️ Installation & Setup
+---
 
-1. **Clone the repository**
+## 🧠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- NLTK
+- Tkinter (GUI)
+- Matplotlib (for visualization)
+- Jupyter Notebook
+
+---
+
+## ⚙️ Installation
+
+1. **Clone the Repository**
    ```bash
-   git clone https://github.com/allakaushik/G-Hostel-Website.git
+   git clone https://github.com/allakaushik/Movie-Genre-Codsoft-.git
+   cd Movie-Genre-Codsoft-
    ```
 
-2. **Setup Local Server**
-   - Use [XAMPP](https://www.apachefriends.org/index.html) or [WAMP](https://www.wampserver.com/) to run Apache & MySQL.
+2. **Create Virtual Environment (Optional)**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-3. **Import Database**
-   - Open `phpMyAdmin`.
-   - Create a database named `ghostel`.
-   - Import the `ghostel.sql` file from the `database/` folder.
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-4. **Run the Application**
-   - Place the project folder inside `htdocs` (for XAMPP) or `www` (for WAMP).
-   - Start Apache and MySQL servers.
-   - Navigate to `http://localhost/G-Hostel-Website` in your browser.
+---
 
-## 👤 Admin Credentials
+## 🧪 Usage
 
-Use the following default credentials to log in as an admin:
-- **Username**: `admin`
-- **Password**: `admin123`  
-*(You can change this from the database manually.)*
+1. Run the Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
 
-## 📸 Screenshots
+2. Open the `.ipynb` file and run each cell step by step to preprocess data, train models, and evaluate accuracy.
 
-| Login Page | Admin Dashboard | Student Panel |
-|------------|-----------------|----------------|
-| ![Login](images/screenshot-login.png) | ![Admin](images/screenshot-admin.png) | ![Student](images/screenshot-student.png) |
+3. (Optional) If a GUI is provided, run the script:
+   ```bash
+   python movie_genre_gui.py
+   ```
 
-## ✅ To-Do / Improvements
+---
 
-- Implement password encryption (bcrypt or PHP password_hash)
-- Improve UI/UX with modern design frameworks
-- Add email verification
-- Mobile responsiveness
-- Role-based access control
+## 📈 Model Accuracy
 
-## 🤝 Contributing
+The model was evaluated using accuracy score, confusion matrix, and classification report. Example accuracy achieved:
 
-Contributions are welcome! Please follow these steps:
+- Logistic Regression: **xx%**
+- Random Forest: **xx%**
+- Naive Bayes: **xx%**
 
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature-name`
-3. Commit your changes: `git commit -m 'Add new feature'`
-4. Push to the branch: `git push origin feature-name`
-5. Open a pull request
+> Update this section based on your actual model evaluation.
 
+---
 
+## 👨‍💻 Contributors
+
+- [Kaushik Alla](https://github.com/allakaushik) - Developer
+
+> ⭐ Feel free to fork this project, contribute, or give it a star!
